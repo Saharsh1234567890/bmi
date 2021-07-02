@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        table, tr, td {
+            border: 5px solid green;
+        }
+    </style>
+    <script src="./demo.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body class="container">
+    <h1 class="display-4 text-success mt-2">BMI Calculator (Body Mass Index) </h1>
+    <input type="text" class="form-control mb-2" id="h" name="h" placeholder="Input your Height in Meters!!!">
+    <input type="text" class="form-control mb-2" id="w" name="w" placeholder="Input your Weight in Kilograms!!!">
+    <button class="btn btn-success mb-2" onclick="bmi()">Calculate Now!!!</button>
+    <p class="text-success"><span id="he">Height</span> / <span id="we">Weight</span></p>
+    <p class="text-success" id="BMI-Value"> BMI Value </p>
+    <table>
+        <tr class="text-warning">
+            <td>Below 18.5</td>
+            <td>Underweight</td>
+        </tr>
+        <tr class="text-success">
+            <td>18.5—24.9</td>
+            <td>Normal</td>
+        </tr>
+        <tr class="text-warning">
+            <td>25.0—29.9</td>
+            <td>Overweight</td>
+        </tr>
+        <tr class="text-danger">
+            <td>30.0 and Above</td>
+            <td>Obese</td>
+        </tr>
+    </table>
+</body>
+</html>
